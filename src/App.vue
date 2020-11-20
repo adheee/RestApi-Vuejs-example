@@ -2,7 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">API Provinsi</router-link>
+      <router-link to="/about">API Provinsi</router-link> |
+      <router-link to="/daftar">Daftar Petani</router-link>
     </div>
     <router-view />
   </div>
@@ -24,8 +25,12 @@
     font-weight: bold;
     color: #2c3e50;
 
+    &:hover {
+      color: #3f6bca;
+    }
+
     &.router-link-exact-active {
-      color: #42b983;
+      color: #3f6bca;
     }
   }
 }
